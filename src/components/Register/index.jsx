@@ -22,7 +22,7 @@ const Register = () => {
     } else {
       const response = await setRegister(data);
       alert(response.data.message);
-      navigate('/login');
+      navigate('/');
       console.log(response);
     }
   };
@@ -70,7 +70,7 @@ const Register = () => {
           Daftar
         </button>
         <Link
-          to="/login"
+          to="/"
           className="mx-auto text-blue-600 mb-4 underline underline-offset-4"
         >
           Sudah Punya Akun
